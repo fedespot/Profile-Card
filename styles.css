@@ -1,0 +1,119 @@
+/* # Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+Dark gray: hsl(0, 0%, 59%)
+
+### Body Copy
+- Font size (name and stats): 18px
+
+### Font
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: Kumbh Sans;
+    background-color: hsl(185, 75%, 39%) !important;
+    background: url(images/bg-pattern-top.svg) no-repeat no-repeat top -30rem left -15rem,
+    url(images/bg-pattern-bottom.svg) no-repeat no-repeat top 30rem right -5rem;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1;
+}
+
+.card{
+    background-color: white;
+    text-align: center;
+    border-radius: 1em;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.backgrond-card{
+    width: 100%;
+}
+
+.avatarphoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.avatar{
+    border-radius: 50%;
+    margin: -3em 0 1em 0;
+    border: 0.4em solid white;
+}
+
+.user-data__name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.user-data__age{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.user-data__city{
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 1.5em;
+    
+}
+
+
+
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.stats__data{
+    display: flex;
+    flex-direction: column;
+}
+
+.stats h2{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+.stats p{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 0.2em;
+}
+
